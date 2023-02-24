@@ -35,6 +35,7 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import logo_new from '../assets/logo_new.svg';
+import profile_picture from '../assets/display.png';
 
 export default {   
   email,
@@ -71,4 +72,5 @@ export default {
   nb,
   skype,
   spotify,
+  profile_picture,
 };
