@@ -36,8 +36,10 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import logo_new from '../assets/logo_new.svg';
 import profile_picture from '../assets/display.png';
+import new_profile from '../assets/newprofile.png'
 
 export default {   
+  new_profile,
   email,
   logo_new,
   mobile,

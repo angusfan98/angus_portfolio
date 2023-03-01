@@ -178,11 +178,14 @@
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
+  right: 50px;
+
 
   img {
     width: 80%;
     object-fit: contain;
     z-index: 1;
+   
   }
 
   .overlay_circle {
