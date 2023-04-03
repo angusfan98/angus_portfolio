@@ -15,7 +15,8 @@ const Skills = () => {
     const skillsquery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
-      setExperience(data);
+      let sorted_data = data.sort((p1,p2)=>(p1.year < p2.year)? 1: (p1.year > p2.year)? -1: 0);
+      setExperience(sorted_data);
     });
 
     client.fetch(skillsquery).then((data) => {

@@ -4,6 +4,7 @@ import './About.scss'
 import {urlFor, client} from '../../client'
 import {AppWrap} from '../../wrapper';
 import {MotionWrap} from '../../wrapper';
+import { TypeAnimation } from 'react-type-animation';
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -13,11 +14,24 @@ const About = () => {
   },[]);
   return (
     <>
-    <h2 className='head-text'>I Know that 
-      <span>Good Design</span><br/>
-      means 
-      <span>Good Business</span>
-    </h2>
+    <h2 className='head-text'><span>Hi my name is Angus Fan,</span><br/></h2>
+    <TypeAnimation
+      sequence={[
+        'I am a Software Engineer', 
+        2000, // Waits 1s
+        'I am enthusiastic about Computer Science', 
+        2000, // Waits 2s
+        'give me a job', 
+        2000,
+        () => {
+          console.log('Sequence completed'); 
+        }
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      className='head-text'
+    />
     <div className='app__profiles'>
       {abouts.map((about,index)=>(
         <motion.div whileInView={{opacity: 1}} whileHover={{scale:1.1}} transition={{duration:0.5,type:'tween'}} className="app__profile-item" key={about.title + index}>
