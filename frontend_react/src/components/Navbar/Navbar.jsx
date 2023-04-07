@@ -30,7 +30,6 @@ const Navbar = () => {
               <ul className='app__navbar-links'>
               {['about', 'work', 'skills', 'contact'].map((item) => (
                 <li key={item}>
-                  <div />
                   <a onClick={()=>setToggle(false)} href={`#${item}`}>{item}</a>
                 </li>
               ))}

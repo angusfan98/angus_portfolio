@@ -17,11 +17,11 @@ const About = () => {
     <h2 className='head-text'><span>Hi my name is Angus Fan,</span><br/></h2>
     <TypeAnimation
       sequence={[
-        'I am a Software Engineer', 
+        'I\'m a Software Engineer.', 
         2000, // Waits 1s
-        'I am enthusiastic about Computer Science', 
+        'I\'m a Computer Scientist.', 
         2000, // Waits 2s
-        'give me a job', 
+        'I\'m looking for a job.', 
         2000,
         () => {
           console.log('Sequence completed'); 
