@@ -13,6 +13,7 @@ const Footer = () => {
 
   const handleChangeInput = (e) => {
     const {name,value} = e.target
+    console.log(name,value)
     setFormData({...formData, [name]:value})
   }
 
@@ -54,7 +55,7 @@ const Footer = () => {
             <input className='p-text' type='email' name='email' placeholder='Your Email' value={email} onChange={handleChangeInput}/>
           </div>
           <div>
-            <textarea className='p-text' placeholder="Your message" value={message} name="message" onChange={handleChangeInput}/>
+            <textarea className='p-text' name="message" placeholder="Your message" value={message} onChange={handleChangeInput}/>
           </div>
           <button type="button" className='p-text' onClick={handleSubmit}>{loading ? 'Sending':'Send Message'}</button>
         </div>

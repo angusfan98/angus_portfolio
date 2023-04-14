@@ -1,9 +1,11 @@
 import React from 'react'
-import {BsLinkedin, BsGithub} from 'react-icons/bs';
+import {BsLinkedin, BsGithub, BsEmojiSmileFill} from 'react-icons/bs';
+import Pdf from './angus_fan_resume.pdf';
 
 const SocialMedia = () => {
   const style = { color: "black"}
   const style_linkedin = {color:"#0366c3"}
+  const style_resume = {color:"dark grey"}
   return (
     <div className='app__social'>
       <a href="https://github.com/angusfan98">
@@ -16,8 +18,14 @@ const SocialMedia = () => {
             <BsLinkedin style={style_linkedin}/>
         </div>
       </a>
-    </div> 
+      <a href={Pdf} target="blank">
+        <div>
+            <BsEmojiSmileFill style={style_resume}/>
+        </div>
+      </a>
+    </div>
   )
 }
 
 export default SocialMedia
+
