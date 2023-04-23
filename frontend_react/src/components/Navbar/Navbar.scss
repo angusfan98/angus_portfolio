@@ -1,5 +1,5 @@
 .app__navbar{
-    width: 89%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,6 +10,7 @@
     border: 1px solid rgba(255,255,255, 0.18);
     position: fixed;
     z-index: 2;
+    box-shadow: 1px 1px 10px lightgrey;
 }
 
 .app__navbar-logo{
@@ -29,6 +30,7 @@
 }
 
 .app__navbar-links{
+    padding: 0px 205px 0px 0px;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -38,6 +40,7 @@
         margin: 0 1rem;
         cursor: pointer;
         flex-direction:column;
+        
 
         div{
             width: 5px;
@@ -54,7 +57,6 @@
             text-transform: uppercase;
             font-weight: 500;
             transition: all 0.3s ease-in-out;
-
             &:hover{
                 color: var(--secondary-color);
             }
