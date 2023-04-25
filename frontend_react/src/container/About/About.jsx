@@ -14,7 +14,7 @@ const About = () => {
   },[]);
   return (
     <>
-    <h2 className='head-text'><span>Hi my name is Angus Fan,</span><br/></h2>
+    <h2 className='head-text'><span className='moving-text'>Hi my name is Angus Fan,</span><br/></h2>
     <TypeAnimation
       sequence={[
         'I\'m a Software Engineer.', 

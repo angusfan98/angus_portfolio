@@ -19,6 +19,7 @@
       background-color: #fff;
       color: #000;
       font-weight: 800;
+      box-shadow: 3px 3px 5px lightgrey;
   
       cursor: pointer;
       transition: all 0.3s ease;
@@ -50,7 +51,7 @@
     .app__work-item {
       width: 270px;
       flex-direction: column;
-  
+      box-shadow: 10px 5px 5px lightgrey;
       margin: 2rem;
       padding: 1rem;
       border-radius: 0.5rem;
